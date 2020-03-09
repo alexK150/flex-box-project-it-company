@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
 }
 
 a {
@@ -21,6 +22,35 @@ p {
 /*Utility Classes*/
 .text-primary {
     color: cornflowerblue;
+}
+
+.large-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    color: white;
+    background: cornflowerblue;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: dodgerblue;
+}
+
+.btn-dark {
+    background: gray;
+    color: white;
 }
 
 /*Navbar*/
@@ -50,4 +80,25 @@ p {
 #navbar ul li a:hover {
     background: cornflowerblue;
     border-radius: 5px;
+}
+
+/*Main*/
+#main {
+    background: dimgrey url("../img/main.jpg") no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+#main .main-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 2rem;
+    /*Overlay*/
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
 }
