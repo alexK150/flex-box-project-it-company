@@ -35,6 +35,16 @@ p {
     color: cornflowerblue;
 }
 
+.bg-light {
+    background: lightgrey;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: white;
+}
+
 .large-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -51,10 +61,31 @@ p {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
 /*padding for top and bottom*/
-.ptb-1 {padding: 1.5rem 0;}
-.ptb-2 {padding: 2rem 0;}
-.ptb-3 {padding: 3rem 0;}
+.ptb-1 {
+    padding: 1.5rem 0;
+}
+
+.ptb-2 {
+    padding: 2rem 0;
+}
+
+.ptb-3 {
+    padding: 3rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2rem;
+}
+
+.p-3 {
+    padding: 3rem;
+}
 
 .btn {
     display: inline-block;
@@ -72,6 +103,16 @@ p {
 .btn-dark {
     background: gray;
     color: white;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 solid 1px;
 }
 
 /*Navbar*/
@@ -125,7 +166,7 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*Section: About Us*/
@@ -145,4 +186,29 @@ p {
     padding: 1rem;
     border-radius: 50%;
     margin-bottom: 1rem;
+}
+
+/*Section: Who We Are*/
+#our-team {
+    display: flex;
+
+}
+
+#our-team div {
+    flex: 1;
+}
+
+#our-team .team-img {
+    background: url("../img/people.jpg") no-repeat center center/cover;
+}
+
+/* Clients */
+#clients .items {
+    display: flex;
+}
+
+#clients .items img {
+    display: block;
+    margin: auto;
+    width: 60%;
 }
