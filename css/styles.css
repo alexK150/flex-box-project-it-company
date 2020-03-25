@@ -45,6 +45,11 @@ p {
     color: white;
 }
 
+.bg-primary {
+    background: #2ecc71;
+    color: white;
+}
+
 .large-heading {
     font-size: 4rem;
     margin-bottom: 0.75rem;
@@ -191,7 +196,6 @@ p {
 /*Section: Who We Are*/
 #our-team {
     display: flex;
-
 }
 
 #our-team div {
@@ -202,7 +206,7 @@ p {
     background: url("../img/people.jpg") no-repeat center center/cover;
 }
 
-/* Clients */
+/* Section: Clients */
 #clients .items {
     display: flex;
 }
@@ -211,4 +215,28 @@ p {
     display: block;
     margin: auto;
     width: 60%;
+}
+
+/* Section: Contact */
+#contact {
+    display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+    background: darkgrey;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
